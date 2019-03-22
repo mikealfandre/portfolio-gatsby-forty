@@ -8,15 +8,17 @@
 
 	.tiles {
 		@include vendor('display', 'flex');
-		@include vendor('flex-wrap', 'wrap');
+		// @include vendor('flex-wrap', 'no-wrap');
 		border-top: 0 !important;
+		
 
 		& + * {
-			border-top: 0 !important;
+			border-top: 0 !important; 
 		}
+		width: 100%;
 
 		article {
-			@include vendor('align-items', 'center');
+			@include vendor('align-items', 'left');
 			@include vendor('display', 'flex');
 			@include vendor('transition', (
 				'transform 0.25s ease',
@@ -24,17 +26,19 @@
 				'filter 1s ease',
 				'-webkit-filter 1s ease'
 			));
-			@include padding(4em, 4em);
+			@include padding(1em, 3em);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			height: 45vh;
+			max-height: 45em;
+			min-height: 24em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			// padding-bottom: 10px;
+			width: 33%;
+
 
 			.image {
 				display: none;
@@ -43,10 +47,13 @@
 			header {
 				position: relative;
 				z-index: 3;
+				border-bottom: 2px solid white;
 			}
 
 			h3 {
 				font-size: 1.75em;
+				margin-bottom: 10px;
+				// min-width: 90%;
 
 				a {
 					&:hover {
@@ -64,6 +71,7 @@
 				width: 100%;
 				z-index: 4;
 			}
+			
 
 			&:before {
 				@include vendor('transition', 'opacity 0.5s ease');
@@ -101,70 +109,255 @@
 				@include vendor('filter', 'blur(0.5em)');
 				opacity: 0;
 			}
+			
 
-			&:nth-child(4n - 1),
-			&:nth-child(4n - 2) {
-				width: 60%;
-			}
+			// &:nth-child(4n - 1),
+			// &:nth-child(4n - 2) {
+			// 	width: 100%;
+			// }
 
-			&:nth-child(6n - 5) {
-				&:before {
-					background-color: _palette(accent1);
-				}
-			}
+			// &:nth-child(6n - 5) {
+			// 	&:before {
+			// 		background-color: _palette(accent1);
+					
+			// 	}
+			// }
 
-			&:nth-child(6n - 4) {
-				&:before {
-					background-color: _palette(accent2);
-				}
-			}
+			// &:nth-child(6n - 4) {
+			// 	&:before {
+			// 		background-color: _palette(accent2);
+					
+			// 	}
+			// }
 
-			&:nth-child(6n - 3) {
-				&:before {
-					background-color: _palette(accent3);
-				}
-			}
+			// &:nth-child(6n - 3) {
+			// 	&:before {
+			// 		background-color: _palette(accent3);
+					
+			// 	}
+			// }
 
-			&:nth-child(6n - 2) {
-				&:before {
-					background-color: _palette(accent4);
-				}
-			}
+			// &:nth-child(6n - 2) {
+			// 	&:before {
+			// 		background-color: _palette(accent4);
+			// 	}
+			// }
 
-			&:nth-child(6n - 1) {
-				&:before {
-					background-color: _palette(accent5);
-				}
-			}
+			// &:nth-child(6n - 1) {
+			// 	&:before {
+			// 		background-color: _palette(accent5);
+			// 	}
+			// }
 
-			&:nth-child(6n) {
-				&:before {
-					background-color: _palette(accent6);
-				}
-			}
+			// &:nth-child(6n) {
+			// 	&:before {
+			// 		background-color: _palette(accent6);
+			// 	}
+			// }
 		}
+	
+		.tile-one{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			// justify-content: flex-start;
+			
+				background-color: _palette(accent1);
+				max-height: 45em;
+				color: rgb(14, 14, 14) !important;
+				opacity: 1 !important;
+				
+			img{
+					height: 100%;
+					width: 100%;
+					opacity: 1 !important;
+				}
+				.content{
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					justify-content: flex-start;
+					// height: 100%;
+					
+					
+					text-align: center;
+					color: white !important;
+					opacity: 1 !important;
+					margin-top: 10%;
+					width: 100%;
+					p{
+						width: 100%;
+						margin: 0px;
+					}
+					.react{
+						width: 100%;
+						// margin-left: -35px;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.redux{
+						width: 100%;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.node{
+						width: 100%;
+						img{
+							width: 50%;
+							height: 20%;
+						}
+					}
+				}
+				
+				
+			}
+			.tile-two{
+				
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			
+				background-color: _palette(accent2);
+				max-height: 45em;
+				color: rgb(14, 14, 14) !important;
+				opacity: 1 !important;
+				
+			img{
+					height: 100%;
+					width: 100%;
+					opacity: 1 !important;
+				}
+				.content{
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					justify-content: flex-start;
+					
+					
+					text-align: center;
+					color: white !important;
+					opacity: 1 !important;
+					margin-top: 10%;
+					width: 100%;
+					p{
+						width: 100%;
+						margin: 0px;
+					}
+					.react{
+						width: 100%;
+						// margin-left: -35px;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.redux{
+						width: 100%;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.node{
+						width: 100%;
+						img{
+							width: 50%;
+							height: 20%;
+						}
+					}
+				}
+				// 
+				
+			}
+			.tile-three{
+				display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			
+				background-color: _palette(accent3);
+				max-height: 45em;
+				color: rgb(14, 14, 14) !important;
+				opacity: 1 !important;
+				
+			img{
+					height: 100%;
+					width: 100%;
+					opacity: 1 !important;
+				}
+				.content{
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					justify-content: flex-start;
+					
+					
+					text-align: center;
+					color: white !important;
+					opacity: 1 !important;
+					margin-top: 10%;
+					width: 100%;
+					p{
+						width: 100%;
+						margin: 0px;
+					}
+					.react{
+						width: 100%;
+						// margin-left: -35px;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.redux{
+						width: 100%;
+						
+						img{
+							width: 50%;
+							height: 10%;
+						}
+					}
+					.node{
+						width: 100%;
+						img{
+							width: 50%;
+							height: 20%;
+						}
+					}
+				}
+			}
 
 		@include breakpoint(large) {
 			article {
-				@include padding(4em, 3em);
-				height: 30vh;
-				max-height: 30em;
+				@include padding(1.5em, 2.5em);
+				height: 44vh;
+				max-height: 45em;
 				min-height: 20em;
+				width: 100% !important;
 			}
 		}
 
 		@include breakpoint(medium) {
 			article {
-				width: 50% !important;
+				width: 100% !important;
 			}
 		}
 
 		@include breakpoint(small) {
 			article {
 				@include padding(3em, 1.5em);
-				height: 16em;
+				height: 22em;
 				max-height: none;
 				min-height: 0;
+				width: 100% !important;
 
 				h3 {
 					font-size: 1.5em;
@@ -176,7 +369,7 @@
 			display: block;
 
 			article {
-				height: 20em;
+				height: 30em;
 				width: 100% !important;
 			}
 		}

@@ -3,21 +3,32 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import ModalImage from 'react-modal-image'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+import screenshot1 from '../assets/images/screenshot1.png'
+import givewyselogo from '../assets/images/givewyselogo.png'
+import reactlogo from '../assets/images/reactlogo.png'
+import reduxlogo from '../assets/images/reduxlogo.png'
+import nodelogo from '../assets/images/nodelogo.png'
+import login from '../assets/images/login.png'
+import mylist from '../assets/images/mylist.png'
+import donations from '../assets/images/donations.png'
+import sass from '../assets/images/sass.png'
+import matui from '../assets/images/matui.png'
+import javascript from '../assets/images/javascript.png'
+import css3 from '../assets/images/css3.png'
+import html5 from '../assets/images/html5.png'
+import postgresql from '../assets/images/postgresql.png'
+import express from '../assets/images/express.png'
 
 class HomeIndex extends React.Component {
     render() {
 
         return (
+            <div>
             <Layout>
                 <Helmet
-                    title="Gatsby Starter - Forty"
+                    title="Mike Alfandre - Web Developer"
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
@@ -26,66 +37,189 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <Banner />
+                    <article >
+                        <header>
+                            <h2></h2>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </header>
+                        
+
+                    </article>
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
-                            <header className="major">
-                                <h3>Aliquam</h3>
-                                <p>Ipsum dolor sit amet</p>
+                            
+                        
+                        <article className="tile-one">
+                            <header>
+                                <h3>JavaScript</h3>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <div className='content'>
+                                    <div className='react'>
+                                        <img src={reactlogo} alt='' />
+                                        <p>React</p>
+                                    </div>
+                                    <div className='redux'>
+                                        <img src={reduxlogo} alt='' />
+                                        <p>Redux</p>
+                                    </div>
+                            </div>
+                            <div className='content'>
+                                    <div className='node'>
+                                        <img src={javascript} alt='' />
+                                        <p>Javascript</p>
+                                    </div>
+                                    <div className='node'>
+                                        <img src='' alt='' />
+                                        <p></p>
+                                    </div>
+                            </div>
+
                         </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
-                            <header className="major">
-                                <h3>Tempus</h3>
-                                <p>feugiat amet tempus</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
-                            <header className="major">
-                                <h3>Magna</h3>
-                                <p>Lorem etiam nullam</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
-                            <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic05})`}}>
-                            <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic06})`}}>
-                            <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
+                            
+                            <article className="tile-two">
+                                <header>
+                                    <h3>CSS / HTML</h3>
+                                </header>
+                                    
+                                <div className='content'>
+                                    <div className='react'>
+                                        <img src={sass} alt='' />
+                                        <p>SASS</p>
+                                    </div>
+                                    <div className='redux'>
+                                        <img src={matui} alt='' />
+                                        <p>Material-UI</p>
+                                    </div>
+                                </div>
+                                <div className='content'>
+                                    <div className='node'>
+                                        <img src={css3} alt='' />
+                                        <p>CSS3</p>
+                                    </div>
+                                    <div className='redux'>
+                                        <img src={html5} alt='' />
+                                        <p>HTML5</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </article>
+                            
+                            <article className="tile-three">
+                                <header>
+                                    <h3>Backend</h3>
+                                </header>
+
+                                <div className='content'>
+                                    <div className='react'>
+                                        <img src={nodelogo} alt='' />
+                                        <p>node</p>
+                                    </div>
+                                    <div className='redux'>
+                                        <img src={postgresql} alt='' />
+                                        <p>PostgreSQL</p>
+                                    </div>
+                                </div>
+                                <div className='content'>
+                                    <div className='node'>
+                                        <img src={express} alt='' />
+                                        <p>express</p>
+                                    </div>
+                                    <div className='node'>
+                                        <img src='' alt='' />
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                        
                     </section>
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Massa libero</h2>
+                                <h2>PROJECTS</h2>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                            <br/>
+                            <h2 id='q'>+GIVEWYSE.</h2>
+                            <p>+GIVEWYSE. is an easy way to discover and donate to charities. Scroll through a list of top rated non-profits and seamlessly donate with the tap of a button. If you're not sure if you want to donate just yet, then add the charity to your list so you can come back and donate later. +GIVEWYSE. tracks your donations so at the end of the year you can get a tax-ready report of all the good you've done.   </p>
+                                <p><strong>Technologies Used:</strong> 
+                                <br/>
+                                <br/>
+                                React | Redux | JavaScript | Node.js | PostgreSQL | HTML | SASS | Material-UI | 3rd Party API's (Unsplash, CharityNavigator)</p>
+
+                            <div className='screen-container'>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={givewyselogo}
+                                            large={givewyselogo}
+
+                                            alt="+GIVEWYSE. logo"
+                                        />
+                            
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={screenshot1}
+                                            large={screenshot1}
+
+                                            alt="Home page"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={login}
+                                            large={login}
+
+                                            alt="Authentication modal"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={mylist}
+                                            large={mylist}
+
+                                            alt="My list of saved charity cards"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={donations}
+                                            large={donations}
+
+                                            alt="Donation history view"
+                                        />
+                                </div>
+                            </div>
+                               
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                                    <li><a href='http://www.givewyse.com' className="button next" target="_blank">visit site</a></li>
+                                    <li><a href='https://github.com/mikealfandre/personal-project' className="button next" target="_blank">GitHub Repo</a></li>
+                                
                             </ul>
                         </div>
                     </section>
                 </div>
+                
 
             </Layout>
+             
+                
+            </div>
         )
     }
 }

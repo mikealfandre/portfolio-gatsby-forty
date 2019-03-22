@@ -50,6 +50,16 @@
 				}
 			}
 		}
+		.contact-custom{
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 100px;
+			margin-bottom: 75px;
+			@media (max-width: 740px){
+					flex-direction: column;
+					align-items: center;
+   				 }
+		}
 
 		@include breakpoint(medium) {
 			> .inner {

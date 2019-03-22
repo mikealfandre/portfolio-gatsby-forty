@@ -8,14 +8,17 @@
 
 	.button {
 		border: solid 2px !important;
+		
 	}
 
 		.button.next {
 			padding-right: 1.75em;
+			
 		}
 
 			.button.next:before, .button.next:after {
 				display: none;
+				
 			}
 
 /* Tiles */

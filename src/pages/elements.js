@@ -2,10 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-import pic03 from '../assets/images/pic03.jpg'
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+
 
 const Elements = (props) => (
     <Layout>
@@ -57,7 +54,7 @@ const Elements = (props) => (
                                 <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
                                 This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
                                 This is <u>underlined</u> and this is code: <code>for (;;)</code>.
-                                Finally, this is a <a href="#">link</a>.</p>
+                                Finally, this is a .</p>
                                 <hr />
                                 <h2>Heading Level 2</h2>
                                 <h3>Heading Level 3</h3>
@@ -98,17 +95,10 @@ const Elements = (props) => (
 
                                         <h4>Icons</h4>
                                         <ul className="icons">
-                                            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-                                            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-                                            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-                                            <li><a href="#" className="icon fa-github"><span className="label">Github</span></a></li>
-                                            <li><a href="#" className="icon fa-dribbble"><span className="label">Dribbble</span></a></li>
-                                            <li><a href="#" className="icon fa-tumblr"><span className="label">Tumblr</span></a></li>
+                                            
                                         </ul>
                                         <ul className="icons">
-                                            <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-                                            <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
-                                            <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
+                                            
                                         </ul>
 
                                     </div>
@@ -131,51 +121,37 @@ const Elements = (props) => (
 
                                 <h4>Actions</h4>
                                 <ul className="actions">
-                                    <li><a href="#" className="button special">Default</a></li>
-                                    <li><a href="#" className="button">Default</a></li>
+                                    
                                 </ul>
                                 <ul className="actions small">
-                                    <li><a href="#" className="button special small">Small</a></li>
-                                    <li><a href="#" className="button small">Small</a></li>
+                                    
                                 </ul>
                                 <div className="grid-wrapper">
                                     <div className="col-6">
                                         <ul className="actions vertical">
-                                            <li><a href="#" className="button special">Default</a></li>
-                                            <li><a href="#" className="button">Default</a></li>
+                                            
                                         </ul>
                                     </div>
                                     <div className="col-6">
                                         <ul className="actions vertical small">
-                                            <li><a href="#" className="button special small">Small</a></li>
-                                            <li><a href="#" className="button small">Small</a></li>
+                                            
                                         </ul>
                                     </div>
                                     <div className="col-6">
                                         <ul className="actions vertical">
-                                            <li><a href="#" className="button special fit">Default</a></li>
-                                            <li><a href="#" className="button fit">Default</a></li>
+                                            
                                         </ul>
                                     </div>
                                     <div className="col-6">
                                         <ul className="actions vertical small">
-                                            <li><a href="#" className="button special small fit">Small</a></li>
-                                            <li><a href="#" className="button small fit">Small</a></li>
+                                           
                                         </ul>
                                     </div>
                                 </div>
 
                                 <h4>Pagination</h4>
                                 <ul className="pagination">
-                                    <li><span className="button small disabled">Prev</span></li>
-                                    <li><a href="#" className="page active">1</a></li>
-                                    <li><a href="#" className="page">2</a></li>
-                                    <li><a href="#" className="page">3</a></li>
-                                    <li><span>&hellip;</span></li>
-                                    <li><a href="#" className="page">8</a></li>
-                                    <li><a href="#" className="page">9</a></li>
-                                    <li><a href="#" className="page">10</a></li>
-                                    <li><a href="#" className="button small">Next</a></li>
+                                    
                                 </ul>
 
                                 <h3>Blockquote</h3>
@@ -279,36 +255,7 @@ const Elements = (props) => (
                         <div className="col-6">
 
                                 <h3>Buttons</h3>
-                                <ul className="actions">
-                                    <li><a href="#" className="button special">Special</a></li>
-                                    <li><a href="#" className="button">Default</a></li>
-                                </ul>
-                                <ul className="actions">
-                                    <li><a href="#" className="button big">Big</a></li>
-                                    <li><a href="#" className="button">Default</a></li>
-                                    <li><a href="#" className="button small">Small</a></li>
-                                </ul>
-                                <ul className="actions">
-                                    <li><a href="#" className="button special big">Big</a></li>
-                                    <li><a href="#" className="button special">Default</a></li>
-                                    <li><a href="#" className="button special small">Small</a></li>
-                                </ul>
-                                <ul className="actions fit">
-                                    <li><a href="#" className="button special fit">Fit</a></li>
-                                    <li><a href="#" className="button fit">Fit</a></li>
-                                </ul>
-                                <ul className="actions fit small">
-                                    <li><a href="#" className="button special fit small">Fit + Small</a></li>
-                                    <li><a href="#" className="button fit small">Fit + Small</a></li>
-                                </ul>
-                                <ul className="actions">
-                                    <li><a href="#" className="button special icon fa-search">Icon</a></li>
-                                    <li><a href="#" className="button icon fa-download">Icon</a></li>
-                                </ul>
-                                <ul className="actions">
-                                    <li><span className="button special disabled">Special</span></li>
-                                    <li><span className="button disabled">Default</span></li>
-                                </ul>
+                                
 
                                 <h3>Form</h3>
 
@@ -378,24 +325,17 @@ const Elements = (props) => (
                                 <h3>Image</h3>
 
                                 <h4>Fit</h4>
-                                <span className="image fit"><img src={pic03} alt="" /></span>
+                                <span className="image fit"></span>
                                 <div className="box alt">
                                     <div className="grid-wrapper">
-                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"></span></div>
+                                        
                                     </div>
                                 </div>
 
                                 <h4>Left &amp; Right</h4>
-                                <p><span className="image left"><img src={pic09} alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-                                <p><span className="image right"><img src={pic10} alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+                                <p><span className="image left"></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+                                <p><span className="image right"></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
 
                                 <h3>Box</h3>
                                 <div className="box">

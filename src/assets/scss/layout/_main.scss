@@ -18,6 +18,51 @@
 
 			@include inner;
 		}
+		.screen-container{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			width: 100%;
+			
+
+		}
+		header > h2{
+			
+			@media (max-width: 400px){
+					top: 80px;
+					min-width: 210%;
+					background: gray;
+					padding: 5px 20px 0px 20px;
+					text-align: center;
+					border-bottom: none;
+   				 }
+		}
+		.skills-cont{
+			height: 200px;
+		}
+		.screen-shot{
+			display: flex;
+			
+				max-width: 18%;
+				min-width: 18%;
+				// margin-right: 3%;
+				margin-bottom: 35px;
+				// height: 100%;
+				// border: 5px solid orange;
+				img{
+					width: 100%;
+					object-fit: contain; 
+				}
+				@media (max-width: 736px){
+					max-width: 40%;
+        			// min-width: 25%;
+   				 }
+				@media (max-width: 400px){
+					max-width: 80%;
+        			// min-width: 25%;
+   				 }
+			}
 
 		&.alt {
 			background-color: transparent;

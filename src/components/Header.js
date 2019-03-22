@@ -4,9 +4,12 @@ import { Link } from 'gatsby'
 
 const Header = (props) => (
     <header id="header" className="alt">
-        <Link to="/" className="logo"><strong>Forty</strong> <span>by HTML5 UP</span></Link>
+        <Link to="/" className="logo"><strong>MIKE</strong> <span>ALFANDRE</span></Link>
         <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
+            <a href="#one" >SKILLS</a>
+            <a href="#two" >PROJECTS</a>
+            <a href="#footer" >CONTACT</a>
+            {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}
         </nav>
     </header>
 )

@@ -224,11 +224,11 @@ class HomeIndex extends React.Component {
                             </header> */}
                             <br/>
                             <h2 id='q'>ShopLime</h2>
-                            <p>+GIVEWYSE. is an easy way to discover and donate to charities. Scroll through a list of top rated non-profits and seamlessly donate with the tap of a button. If you're not sure if you want to donate just yet, then add the charity to your list so you can come back and donate later. +GIVEWYSE. tracks your donations so at the end of the year you can get a tax-ready report of all the good you've done.   </p>
+                            <p>ShopLime is a live streaming platform where brands can demo their products and consumers can watch and buy all within the app.   </p>
                                 <p><strong>Technologies Used:</strong> 
                                 <br/>
                                 <br/>
-                                React | Redux | JavaScript | Node.js | PostgreSQL | HTML | SASS | Material-UI | 3rd Party API's (Unsplash, CharityNavigator)</p>
+                                React | Redux | JavaScript | Node.js | PostgreSQL | HTML | SASS | Material-UI </p>
 
                             <div className='screen-container'>
                                 {/* <div className='screen-shot'>

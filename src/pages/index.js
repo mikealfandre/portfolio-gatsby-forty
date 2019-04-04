@@ -231,17 +231,17 @@ class HomeIndex extends React.Component {
                                 React | Redux | JavaScript | Node.js | PostgreSQL | HTML | SASS | Material-UI | 3rd Party API's (Unsplash, CharityNavigator)</p>
 
                             <div className='screen-container'>
-                                <div className='screen-shot'>
+                                {/* <div className='screen-shot'>
                                     
                                         <ModalImage
                                             hideDownload={true}
-                                            // small={givewyselogo}
-                                            // large={givewyselogo}
+                                            small={givewyselogo}
+                                            large={givewyselogo}
 
                                             alt="+GIVEWYSE. logo"
                                         />
                             
-                                </div>
+                                </div> */}
                                 <div className='screen-shot'>
                                     
                                         <ModalImage

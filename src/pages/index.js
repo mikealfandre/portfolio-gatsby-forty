@@ -19,6 +19,10 @@ import javascript from '../assets/images/javascript.png'
 import css3 from '../assets/images/css3.png'
 import html5 from '../assets/images/html5.png'
 import postgresql from '../assets/images/postgresql.png'
+import productdetailsvideos from '../assets/images/productdetailsvideos.png'
+import mainstream from '../assets/images/mainstream.png'
+import admin from '../assets/images/admin.png'
+import shopauth from '../assets/images/authentication.png'
 import express from '../assets/images/express.png'
 
 class HomeIndex extends React.Component {
@@ -209,6 +213,80 @@ class HomeIndex extends React.Component {
                             <ul className="actions">
                                     <li><a href='http://www.givewyse.com' className="button next" target="_blank">visit site</a></li>
                                     <li><a href='https://github.com/mikealfandre/personal-project' className="button next" target="_blank">GitHub Repo</a></li>
+                                
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="three">
+                        <div className="inner">
+                            {/* <header className="major">
+                                <h2>PROJECTS</h2>
+                            </header> */}
+                            <br/>
+                            <h2 id='q'>ShopLime</h2>
+                            <p>+GIVEWYSE. is an easy way to discover and donate to charities. Scroll through a list of top rated non-profits and seamlessly donate with the tap of a button. If you're not sure if you want to donate just yet, then add the charity to your list so you can come back and donate later. +GIVEWYSE. tracks your donations so at the end of the year you can get a tax-ready report of all the good you've done.   </p>
+                                <p><strong>Technologies Used:</strong> 
+                                <br/>
+                                <br/>
+                                React | Redux | JavaScript | Node.js | PostgreSQL | HTML | SASS | Material-UI | 3rd Party API's (Unsplash, CharityNavigator)</p>
+
+                            <div className='screen-container'>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            // small={givewyselogo}
+                                            // large={givewyselogo}
+
+                                            alt="+GIVEWYSE. logo"
+                                        />
+                            
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={mainstream}
+                                            large={mainstream}
+
+                                            alt="Home page"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={productdetailsvideos}
+                                            large={productdetailsvideos}
+
+                                            alt="Authentication modal"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={admin}
+                                            large={admin} 
+
+                                            alt="My list of saved charity cards"
+                                        />
+                                </div>
+                                <div className='screen-shot'>
+                                    
+                                        <ModalImage
+                                            hideDownload={true}
+                                            small={shopauth}
+                                            large={shopauth}
+
+                                            alt="Donation history view"
+                                        />
+                                </div>
+                            </div>
+                               
+                            <ul className="actions">
+                                    <li><a href='http://www.shoplime.live' className="button next" target="_blank">visit site</a></li>
+                                    <li><a href='https://github.com/shoplime/shop-lime' className="button next" target="_blank">GitHub Repo</a></li>
                                 
                             </ul>
                         </div>
